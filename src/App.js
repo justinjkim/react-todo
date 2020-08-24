@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
+import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -14,9 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header> */}
       <TodoForm passTodos={passTodos} />
       <TodoList todos={todos} />
     </div>
