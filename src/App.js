@@ -4,7 +4,7 @@ import TodoList from './TodoList';
 import './App.css';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(["eat", "more", "veggies"]);
 
   const passTodos = (inputValue) => {
     setTodos([...todos, inputValue]);

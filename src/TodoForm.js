@@ -12,6 +12,7 @@ const TodoForm = ({ passTodos }) => {
     passTodos(inputValue);
     setInputValue("");
   }
+
   return(
     <form onSubmit={handleSubmit}>
       <input

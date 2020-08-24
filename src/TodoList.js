@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import TodoItem from './TodoItem';
 
 const TodoList = ({ todos }) => {
   const listItems = todos.map((todo) => {
     return(
-      <li>{todo}</li>
+      <React.Fragment>
+        <ul>
+          <TodoItem todo={todo} />
+        </ul>
+      </React.Fragment>
     )
   });
 
